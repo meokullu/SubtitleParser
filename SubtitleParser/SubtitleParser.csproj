@@ -17,6 +17,7 @@
     <PackageProjectUrl>https://meokullu.github.io/SubtitleParser/</PackageProjectUrl>
     <RepositoryUrl>https://meokullu.github.io/SubtitleParser/</RepositoryUrl>
     <PackageTags>Subtitle;</PackageTags>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
