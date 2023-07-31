@@ -4,8 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
-    <FileVersion>1.1.0</FileVersion>
+    <AssemblyVersion>1.1.1</AssemblyVersion>
+    <FileVersion>1.1.1</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -16,12 +16,11 @@
     <Copyright>Okullu</Copyright>
     <PackageProjectUrl>https://meokullu.github.io/SubtitleParser/</PackageProjectUrl>
     <RepositoryUrl>https://meokullu.github.io/SubtitleParser/</RepositoryUrl>
-    <PackageTags>Subtitle;</PackageTags>
-    <PackageReleaseNotes>Adding xml summaries to SubtitleBlock class and its elements.
-Hotfix on GetInlineText() local function.
-Support Unsafe versions of ParseSubtitleList() and GetTextByLines()
-    </PackageReleaseNotes>
-    <Version>1.1.0</Version>
+    <PackageTags>Subtitle; Caption;</PackageTags>
+    <PackageReleaseNotes>Icon added</PackageReleaseNotes>
+    <Version>1.1.1</Version>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,12 +33,23 @@ Support Unsafe versions of ParseSubtitleList() and GetTextByLines()
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
     <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
