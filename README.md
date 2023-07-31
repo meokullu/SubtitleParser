@@ -30,6 +30,11 @@ Returns list of SubtitleBlocks (List<SubtitleBlock>)
 
 ## Version History
 
+* 1.1.0
+  * Adding xml summaries to SubtitleBlock class and its elements.
+  * Hotfix on GetInlineText() local function.
+  * Support Unsafe versions of ParseSubtitleList() and GetTextByLines()
+
 * 1.0.0 Initial Release
 
 ## Task List
