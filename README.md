@@ -41,6 +41,8 @@ Returns list of SubtitleBlocks (List<SubtitleBlock>)
 - [ ] Safe versions of methods
 - [ ] Offer TrimmedLineIndexList as public
 - [ ] Support different culture options
+- [ ] Some order numbers are not integers. E.g 1.1 1.2
+- [ ] Support multiple culture for donations on time marks.
 
 ## Licence
 No license is required.
