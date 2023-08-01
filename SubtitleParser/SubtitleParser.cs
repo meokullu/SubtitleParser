@@ -8,6 +8,11 @@
         // Variable list hold line number of trimmed lines.
         private static readonly List<int> s_trimmedLineIndexList = new List<int>();
 
+        /// <summary>
+        /// List variable that holds order numbers that are trimmed by ParseSubtitleList() or ParseSubitleListUnsafe()
+        /// </summary>
+        public static readonly List<int> S_trimmedLineIndexList = s_trimmedLineIndexList;
+
         // Subtitle block class.
         /// <summary>
         /// Subtitle block is a class holds order number, starting and ending time of subtitle and lines of contents.
