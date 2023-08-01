@@ -9,7 +9,7 @@
             SubtitleParser, parses subtitle file content.
             </summary>
         </member>
-        <member name="F:SubtitleParser.SubtitleParser.S_trimmedLineIndexList">
+        <member name="F:SubtitleParser.SubtitleParser.TrimmedLineIndexList">
             <summary>
             List variable that holds order numbers that are trimmed by ParseSubtitleList() or ParseSubitleListUnsafe()
             </summary>
