@@ -4,8 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
-    <FileVersion>1.1.0</FileVersion>
+    <AssemblyVersion>1.2.0</AssemblyVersion>
+    <FileVersion>1.2.0</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -17,9 +17,10 @@
     <PackageProjectUrl>https://meokullu.github.io/SubtitleParser/</PackageProjectUrl>
     <RepositoryUrl>https://meokullu.github.io/SubtitleParser/</RepositoryUrl>
     <PackageTags>Subtitle;</PackageTags>
-    <PackageReleaseNotes>    
+    <PackageReleaseNotes> Added TrimmedLineIndexList publicly available
+    Added OutputDLL folder which contains .dll and .xml file.
     </PackageReleaseNotes>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -41,6 +42,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OutputDLL\" />
   </ItemGroup>
 
 </Project>

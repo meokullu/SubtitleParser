@@ -30,6 +30,10 @@ Returns list of SubtitleBlocks (List<SubtitleBlock>)
 
 ## Version History
 
+* 1.2.0
+  * Added TrimmedLineIndexList publicly available.
+  * Added OutputDLL which contains .dll and .xml file.
+
 * 1.1.0
   * Adding xml summaries to SubtitleBlock class and its elements.
   * Hotfix on GetInlineText() local function.
@@ -38,11 +42,10 @@ Returns list of SubtitleBlocks (List<SubtitleBlock>)
 * 1.0.0 Initial Release
 
 ## Task List
-- [ ] Safe versions of methods
-- [ ] Offer TrimmedLineIndexList as public
-- [ ] Support different culture options
-- [ ] Some order numbers are not integers. E.g 1.1 1.2
-- [ ] Support multiple culture for donations on time marks.
+- [x] Safe versions of methods
+- [x] Offer TrimmedLineIndexList as public
+- [x] Some order numbers are not integers. E.g 1.1 1.2
+- [ ] Support multiple culture for notations on time marks.
 
 ## Licence
 No license is required.

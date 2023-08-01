@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SubtitleParser</name>
+    </assembly>
+    <members>
+        <member name="T:SubtitleParser.SubtitleParser">
+            <summary>
+            SubtitleParser, parses subtitle file content.
+            </summary>
+        </member>
+        <member name="T:SubtitleParser.SubtitleParser.SubtitleBlock">
+            <summary>
+            Subtitle block is a class holds order number, starting and ending time of subtitle and lines of contents.
+            </summary>
+        </member>
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.orderNumber">
+            <summary>
+            Order number of subtitle blocks.
+            </summary>
+        </member>
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.startTime">
+            <summary>
+            Starting time of subtitle block.
+            </summary>
+        </member>
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.endTime">
+            <summary>
+            Ending time of subititle.
+            </summary>
+        </member>
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.inlineTextList">
+            <summary>
+            Lines of text contents.
+            </summary>
+        </member>
+        <member name="M:SubtitleParser.SubtitleParser.GetTextByLines(System.String)">
+            <summary>
+            [Unsafe] Returns lines of contents of specified file via its path.
+            </summary>
+            <param name="filePath">File path that content will be read.</param>
+            <returns>Lines of contents (string[])</returns>
+        </member>
+        <member name="M:SubtitleParser.SubtitleParser.GetTextByLinesUnsafe(System.String)">
+            <summary>
+            [Unsafe] Returns lines of contents of specified file via its path.
+            </summary>
+            <param name="filePath">File path that content will be read.</param>
+            <returns>Lines of contents (string[])</returns>
+        </member>
+        <member name="M:SubtitleParser.SubtitleParser.ParseSubtitleList(System.String[])">
+            <summary>
+            [Unsafe] Returns parsed contents. This method trims text contents of given subtitle lines.
+            </summary>
+            <param name="subtitleLines">Lines of contents to be parsed</param>
+            <returns>List of SubtitleBlock (List[SubtitleBlock])</returns>
+        </member>
+        <member name="M:SubtitleParser.SubtitleParser.ParseSubtitleListUnsafe(System.String[])">
+            <summary>
+            [Unsafe] Returns parsed contents. This method trims text contents of given subtitle lines.
+            </summary>
+            <param name="subtitleLines">Lines of contents to be parsed</param>
+            <returns>List of SubtitleBlock (List[SubtitleBlock])</returns>
+        </member>
+    </members>
+</doc>
