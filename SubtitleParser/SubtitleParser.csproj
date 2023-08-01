@@ -4,8 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>1.2.0</AssemblyVersion>
-    <FileVersion>1.2.0</FileVersion>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -19,8 +19,9 @@
     <PackageTags>Subtitle;</PackageTags>
     <PackageReleaseNotes> Added TrimmedLineIndexList publicly available
     Added OutputDLL folder which contains .dll and .xml file.
+    Fixing variable name inside of SubtitleBlock. Public members start with uppercase now.
     </PackageReleaseNotes>
-    <Version>1.2.0</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
