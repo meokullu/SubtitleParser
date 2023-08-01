@@ -23,25 +23,25 @@
             /// <summary>
             /// Order number of subtitle blocks.
             /// </summary>
-            public int orderNumber;
+            public int OrderNumber;
 
             /// <summary>
             /// Starting time of subtitle block.
             /// </summary>
             // Starting time of subtitle.
-            public TimeSpan startTime;
+            public TimeSpan StartTime;
 
             // Ending time of subtitle.
             /// <summary>
             /// Ending time of subititle.
             /// </summary>
-            public TimeSpan endTime;
+            public TimeSpan EndTime;
 
             // Multiple-line text content of subtitle.
             /// <summary>
             /// Lines of text contents.
             /// </summary>
-            public List<string>? inlineTextList;
+            public List<string>? InlineTextList;
         }
 
         /// <summary>
@@ -104,18 +104,18 @@
                     SubtitleBlock sb = new SubtitleBlock
                     {
                         // Order number is an integer holds sequence of subtitle blocks. It splits line if it containts a dot and take first part. If it doesn't containts a dot it converts string to Int32.
-                        orderNumber = Convert.ToInt32(subtitleLines[i].Split('.')[0]),
+                        OrderNumber = Convert.ToInt32(subtitleLines[i].Split('.')[0]),
 
                         // 00:00:00,000 --> 00:00:01,000
 
                         // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
-                        startTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
+                        StartTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
 
                         // Take last 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().
-                        endTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(17, 12), @"hh\:mm\:ss\,fff", null),
+                        EndTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(17, 12), @"hh\:mm\:ss\,fff", null),
 
                         // Calls GetInlineText() to fill inlineTextList. GetInlineText() returns lines of contents on specified SubtitleBlock
-                        inlineTextList = GetInlineText(),
+                        InlineTextList = GetInlineText(),
                     };
 
                     // Adding sb instance into list.
@@ -196,18 +196,18 @@
                 SubtitleBlock sb = new SubtitleBlock
                 {
                     // Order number is an integer holds sequence of subtitle blocks. It splits line if it containts a dot and take first part. If it doesn't containts a dot it converts string to Int32.
-                    orderNumber = Convert.ToInt32(subtitleLines[i].Split('.')[0]),
+                    OrderNumber = Convert.ToInt32(subtitleLines[i].Split('.')[0]),
 
                     // 00:00:00,000 --> 00:00:01,000
 
                     // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
-                    startTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
+                    StartTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
 
                     // Take last 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().
-                    endTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(17, 12), @"hh\:mm\:ss\,fff", null),
+                    EndTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(17, 12), @"hh\:mm\:ss\,fff", null),
 
                     // Calls GetInlineText() to fill inlineTextList. GetInlineText() returns lines of contents on specified SubtitleBlock
-                    inlineTextList = GetInlineText(),
+                    InlineTextList = GetInlineText(),
                 };
 
                 // Adding sb instance into list.

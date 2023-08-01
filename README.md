@@ -30,6 +30,9 @@ Returns list of SubtitleBlocks (List<SubtitleBlock>)
 
 ## Version History
 
+* 2.0.0
+  * Fixing naming vialations inside of SubtitleBlock. Public members names start with uppercase now.
+
 * 1.2.0
   * Added TrimmedLineIndexList publicly available.
   * Added OutputDLL which contains .dll and .xml file.

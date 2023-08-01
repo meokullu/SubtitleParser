@@ -9,27 +9,32 @@
             SubtitleParser, parses subtitle file content.
             </summary>
         </member>
+        <member name="F:SubtitleParser.SubtitleParser.S_trimmedLineIndexList">
+            <summary>
+            List variable that holds order numbers that are trimmed by ParseSubtitleList() or ParseSubitleListUnsafe()
+            </summary>
+        </member>
         <member name="T:SubtitleParser.SubtitleParser.SubtitleBlock">
             <summary>
             Subtitle block is a class holds order number, starting and ending time of subtitle and lines of contents.
             </summary>
         </member>
-        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.orderNumber">
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.OrderNumber">
             <summary>
             Order number of subtitle blocks.
             </summary>
         </member>
-        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.startTime">
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.StartTime">
             <summary>
             Starting time of subtitle block.
             </summary>
         </member>
-        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.endTime">
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.EndTime">
             <summary>
             Ending time of subititle.
             </summary>
         </member>
-        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.inlineTextList">
+        <member name="F:SubtitleParser.SubtitleParser.SubtitleBlock.InlineTextList">
             <summary>
             Lines of text contents.
             </summary>
