@@ -4,8 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>2.0.0</AssemblyVersion>
-    <FileVersion>2.0.0</FileVersion>
+    <AssemblyVersion>2.0.1</AssemblyVersion>
+    <FileVersion>2.0.1</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -20,8 +20,11 @@
     <PackageReleaseNotes> Added TrimmedLineIndexList publicly available
     Added OutputDLL folder which contains .dll and .xml file.
     Fixing variable name inside of SubtitleBlock. Public members start with uppercase now.
+    Icon error was fixed.
     </PackageReleaseNotes>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <PackageIcon>Resources\icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,6 +37,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
@@ -43,10 +50,15 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Update="Resources\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="OutputDLL\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
