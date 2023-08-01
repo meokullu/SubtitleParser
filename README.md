@@ -34,6 +34,12 @@ Returns list of SubtitleBlocks (List<SubtitleBlock>)
 
 * subtitleLines: Subtitle file's content by lines.
 
+```
+S_trimmedLineIndexList
+```
+
+Returns line list of content that are trimöed.
+
 ## Version History
 
 * 1.2.0
