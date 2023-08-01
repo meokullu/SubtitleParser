@@ -8,7 +8,6 @@
         // Variable list hold line number of trimmed lines.
         private static readonly List<int> s_trimmedLineIndexList = new List<int>();
 
-        //TODO: Some orderNumber are not integers. E.g 1.1 34.2
         // Subtitle block class.
         /// <summary>
         /// Subtitle block is a class holds order number, starting and ending time of subtitle and lines of contents.
