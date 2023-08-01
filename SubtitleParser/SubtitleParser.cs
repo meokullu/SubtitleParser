@@ -11,7 +11,7 @@
         /// <summary>
         /// List variable that holds order numbers that are trimmed by ParseSubtitleList() or ParseSubitleListUnsafe()
         /// </summary>
-        public static readonly List<int> S_trimmedLineIndexList = s_trimmedLineIndexList;
+        public static readonly List<int> TrimmedLineIndexList = s_trimmedLineIndexList;
 
         // Subtitle block class.
         /// <summary>
