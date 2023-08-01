@@ -13,6 +13,8 @@ SubtitleParser has methods get content lines from specified file path and parse 
 #### Read Content
 ```
 GetTextByLines(string filePath)
+```
+```
 GetTextByLinesUnsafe(string filePath)
 ```
 
@@ -23,6 +25,8 @@ Returns lines of contents. (string[])
 #### Parsing
 ```
 ParseSubtitleList(string[] subtitleLines)
+```
+```
 ParseSubtitleListUnsafe(string[] subtitleLines)
 ```
 
