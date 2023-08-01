@@ -17,9 +17,7 @@
     <PackageProjectUrl>https://meokullu.github.io/SubtitleParser/</PackageProjectUrl>
     <RepositoryUrl>https://meokullu.github.io/SubtitleParser/</RepositoryUrl>
     <PackageTags>Subtitle;</PackageTags>
-    <PackageReleaseNotes>Adding xml summaries to SubtitleBlock class and its elements.
-Hotfix on GetInlineText() local function.
-Support Unsafe versions of ParseSubtitleList() and GetTextByLines()
+    <PackageReleaseNotes>    
     </PackageReleaseNotes>
     <Version>1.1.0</Version>
   </PropertyGroup>

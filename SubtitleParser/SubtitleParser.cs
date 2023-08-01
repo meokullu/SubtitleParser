@@ -103,8 +103,6 @@
 
                         // 00:00:00,000 --> 00:00:01,000
 
-                        // TODO: CultureInvariant? (dot or comma)
-
                         // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
                         startTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
 
@@ -197,8 +195,6 @@
 
                     // 00:00:00,000 --> 00:00:01,000
 
-                    // TODO: CultureInvariant? (dot or comma)
-                   
                     // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
                     startTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
 
