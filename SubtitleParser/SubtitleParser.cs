@@ -13,7 +13,6 @@
         /// </summary>
         public static readonly List<int> S_trimmedLineIndexList = s_trimmedLineIndexList;
 
-        //TODO: Some orderNumber are not integers. E.g 1.1 34.2
         // Subtitle block class.
         /// <summary>
         /// Subtitle block is a class holds order number, starting and ending time of subtitle and lines of contents.
@@ -109,8 +108,6 @@
 
                         // 00:00:00,000 --> 00:00:01,000
 
-                        // TODO: CultureInvariant? (dot or comma)
-
                         // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
                         startTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
 
@@ -203,8 +200,6 @@
 
                     // 00:00:00,000 --> 00:00:01,000
 
-                    // TODO: CultureInvariant? (dot or comma)
-                   
                     // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
                     startTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
 
