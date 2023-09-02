@@ -44,6 +44,12 @@ Returns line list of content that are trimöed.
 
 ## Version History
 
+* 2.0.2
+  * Fixed naming violations.
+
+* 2.0.1
+  * Fixed naming violations.
+
 * 2.0.0
   * Fixing naming vialations inside of SubtitleBlock. Public members names start with uppercase now.
 
@@ -59,13 +65,10 @@ Returns line list of content that are trimöed.
 * 1.0.0 Initial Release
 
 ## Task List
-- [x] Safe versions of methods
-- [x] Offer TrimmedLineIndexList as public
-- [x] Some order numbers are not integers. E.g 1.1 1.2
 - [ ] Support multiple culture for notations on time marks.
 
 ## Licence
-No license is required.
+[MIT license](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE)
 
 ## Authors
 Twitter: Enes Okullu [@enesokullu](https://twitter.com/EnesOkullu)
