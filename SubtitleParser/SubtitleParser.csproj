@@ -4,8 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>2.0.1</AssemblyVersion>
-    <FileVersion>2.0.1</FileVersion>
+    <AssemblyVersion>2.0.2</AssemblyVersion>
+    <FileVersion>2.0.2</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -22,7 +22,7 @@
     Fixing variable name inside of SubtitleBlock. Public members start with uppercase now.
     Icon error was fixed.
     </PackageReleaseNotes>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     <PackageIcon>Resources\icon.png</PackageIcon>
   </PropertyGroup>

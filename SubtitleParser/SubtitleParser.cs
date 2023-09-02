@@ -139,7 +139,7 @@
                 List<string> GetInlineText()
                 {
                     // Variable holds lines of contents.
-                    List<string> _innerTextList = new List<string>();
+                    List<string> innerTextList = new List<string>();
 
                     // Loop while next line is not null and file content is not finished
                     while ((i + 2 < subtitleLines.Length) && string.IsNullOrEmpty(subtitleLines[i + 2]) == false)
@@ -159,14 +159,14 @@
                         #endregion Trimming
 
                         // Adding line into internal variable.
-                        _innerTextList.Add(subtitleLines[i + 2]);
+                        innerTextList.Add(subtitleLines[i + 2]);
 
                         // Increasing variable to check if next line is null, empty or filled line.
                         i++;
                     }
 
                     // Returning list of text contents.
-                    return _innerTextList;
+                    return innerTextList;
                 }
             }
             catch (Exception ex)
