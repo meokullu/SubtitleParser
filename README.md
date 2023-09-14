@@ -44,6 +44,9 @@ Returns line list of content that are trimöed.
 
 ## Version History
 
+* 2.1.0
+	* Multi-target frameworks support is added.
+
 * 2.0.2
   * Fixed naming violations.
 
