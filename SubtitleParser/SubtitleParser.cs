@@ -1,4 +1,9 @@
-﻿namespace SubtitleParser
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
+namespace SubtitleParser
 {
     /// <summary>
     /// SubtitleParser, parses subtitle file content.
@@ -41,7 +46,7 @@
             /// <summary>
             /// Lines of text contents.
             /// </summary>
-            public List<string>? InlineTextList;
+            public List<string> InlineTextList;
         }
 
         /// <summary>
