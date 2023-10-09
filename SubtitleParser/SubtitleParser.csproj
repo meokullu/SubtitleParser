@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0; net7.0; net461; netcoreapp3.1; netstandard2.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
-    <AssemblyVersion>2.1.1</AssemblyVersion>
-    <FileVersion>2.1.1</FileVersion>
+    <AssemblyVersion>2.1.2</AssemblyVersion>
+    <FileVersion>2.1.2</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -14,12 +14,12 @@
     <Description>Subtitle Parser helps you to parse subtitle files.</Description>
     <Copyright>Enes Okullu</Copyright>
     <PackageProjectUrl>https://meokullu.github.io/SubtitleParser/</PackageProjectUrl>
-    <RepositoryUrl>https://meokullu.github.io/SubtitleParser/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/meokullu/SubtitleParser</RepositoryUrl>
     <PackageTags>Subtitle;</PackageTags>
     <PackageReleaseNotes>
       Icon was replaced with higher resolution
     </PackageReleaseNotes>
-    <Version>2.1.1</Version>
+    <Version>2.1.2</Version>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     <PackageIcon>icon.png</PackageIcon>
     <Company>Enes Okullu</Company>
