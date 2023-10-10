@@ -1,4 +1,4 @@
-# SubtitleParser
+## SubtitleParser
 
 SubtitleParser is a project to parse subtitle content data into subtitle blocks.
 
@@ -6,78 +6,26 @@ SubtitleParser is a project to parse subtitle content data into subtitle blocks.
 
 [Check out on NuGet gallery](https://www.nuget.org/packages/SubtitleParser/)
 
-## Description
+### Description
 
 SubtitleParser has methods get content lines from specified file path and parse them into subtitle blocks.
 
-## Listed Methods
+### Example usage
 
-#### Read Content
-```
-GetTextByLines(string filePath)
-```
-```
-GetTextByLinesUnsafe(string filePath)
-```
+To check listed methods, ~~example of output~~ visit wiki page. [SubtitleParser Wiki](https://github.com/meokullu/SubtitleParser/wiki/Listed-Methods)
 
-Returns lines of contents. (string[])
+### Version History
 
-* filePath: Specified file path
+See [Changelog](https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
 
-#### Parsing
-```
-ParseSubtitleList(string[] subtitleLines)
-```
-```
-ParseSubtitleListUnsafe(string[] subtitleLines)
-```
-
-Returns list of SubtitleBlocks (List<SubtitleBlock>)
-
-* subtitleLines: Subtitle file's content by lines.
-
-```
-S_trimmedLineIndexList
-```
-
-Returns line list of content that are trimöed.
-
-## Version History
-
-* 2.1.1
-  	* Icon was replaced with higher resolution.
-
-* 2.1.0
-	* Multi-target frameworks (net6.0; net7.0; net461; netcoreapp3.1; netstandard2.0) support is added.
-
-* 2.0.2
-  * Fixed naming violations.
-
-* 2.0.1
-  * Fixed naming violations.
-
-* 2.0.0
-  * Fixing naming vialations inside of SubtitleBlock. Public members names start with uppercase now.
-
-* 1.2.0
-  * Added TrimmedLineIndexList publicly available.
-  * Added OutputDLL which contains .dll and .xml file.
-
-* 1.1.0
-  * Adding xml summaries to SubtitleBlock class and its elements.
-  * Hotfix on GetInlineText() local function.
-  * Support Unsafe versions of ParseSubtitleList() and GetTextByLines()
-
-* 1.0.0 Initial Release
-
-## Task List
+### Task List
 - [ ] Support multiple culture for notations on time marks.
 
-## Licence
+### Licence
 [MIT license](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE)
 
-## Authors
+### Authors
 Twitter: Enes Okullu [@enesokullu](https://twitter.com/EnesOkullu)
 
-## Help
+### Help
 Twitter: Enes Okullu [@enesokullu](https://twitter.com/EnesOkullu)
