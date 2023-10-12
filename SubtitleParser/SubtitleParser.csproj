@@ -6,7 +6,7 @@
     <AssemblyVersion>2.1.2</AssemblyVersion>
     <FileVersion>2.1.2</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Authors>Enes Okullu</Authors>
@@ -17,13 +17,16 @@
     <RepositoryUrl>https://github.com/meokullu/SubtitleParser</RepositoryUrl>
     <PackageTags>Subtitle;</PackageTags>
     <PackageReleaseNotes>
-      Icon was replaced with higher resolution
+      v.2.1.2 preparing for Nuget refresh.
+
+      See changelog https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md
     </PackageReleaseNotes>
     <Version>2.1.2</Version>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     <PackageIcon>icon.png</PackageIcon>
     <Company>Enes Okullu</Company>
-    <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -41,7 +44,7 @@
 
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
-    <None Include="..\LICENSE.txt">
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
