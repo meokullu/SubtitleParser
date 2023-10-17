@@ -19,7 +19,7 @@ To check listed methods, ~~example of output~~ visit wiki page. [SubtitleParser 
 See [Changelog](https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
 
 ### Task List
-- [ ] Support multiple culture for notations on time marks.
+* Create an issue or check task list: [Issues](https://github.com/meokullu/SubtitleParser/issues)
 
 ### Licence
 [MIT license](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE)
