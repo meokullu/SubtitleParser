@@ -18,7 +18,6 @@
     <PackageTags>Subtitle;</PackageTags>
     <PackageReleaseNotes>
       v.2.1.2 preparing for Nuget refresh.
-
       See changelog https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md
     </PackageReleaseNotes>
     <Version>2.1.2</Version>
