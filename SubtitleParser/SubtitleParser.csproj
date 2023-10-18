@@ -15,10 +15,10 @@
     <Copyright>Enes Okullu</Copyright>
     <PackageProjectUrl>https://meokullu.github.io/SubtitleParser/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/meokullu/SubtitleParser</RepositoryUrl>
-    <PackageTags>Subtitle;</PackageTags>
+    <PackageTags>parser; movies; movie; parsing; subtitles; subtitle; film; films; subtitle-parser</PackageTags>
     <PackageReleaseNotes>
-      v.2.1.2 preparing for Nuget refresh.
-      See changelog https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md
+      v2.1.2 preparing for Nuget refresh.
+      See changelog (https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
     </PackageReleaseNotes>
     <Version>2.1.2</Version>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
