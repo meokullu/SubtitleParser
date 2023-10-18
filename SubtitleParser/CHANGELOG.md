@@ -1,4 +1,4 @@
-## SubititleParser Changelog
+## SubtitleParser Changelog
 
 <!--
 ## [Unreleased]
