@@ -10,9 +10,16 @@
 ### Removed
 -->
 
-## [2.x.y] (Upcoming)
-*
-*
+## [2.1.2]
+
+### Added
+* Wiki link added under Example Usage on README.
+* CHANGELOG link added under Version History on README.
+* Multiple tags added for PackageTags.
+
+### Changed
+* CHANGELOG has better view.
+* LICENCE.txt renamed as LICENCE.
 
 ## [2.1.1]
 
