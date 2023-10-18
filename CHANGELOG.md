@@ -1,5 +1,6 @@
-# Changelog
+## SubtitleParser Changelog
 
+<!--
 ## [Unreleased]
 
 ### Added
@@ -7,6 +8,10 @@
 ### Changed
 
 ### Removed
+-->
+
+## [2.x.y] (Upcoming)
+*
 
 ## [2.1.1]
 
@@ -36,17 +41,17 @@
 ## [1.2.0]
 
 ### Added
-* Added TrimmedLineIndexList publicly available.
+* Added `TrimmedLineIndexList` publicly available.
 * Added OutputDLL which contains .dll and .xml file.
 
 ## [1.1.0]
 
 ### Added
  * Adding xml summaries to SubtitleBlock class and its elements. 
- * Support Unsafe versions of ParseSubtitleList() and GetTextByLines()
+ * Support Unsafe versions of `ParseSubtitleList()` and `GetTextByLines()`.
 
 ### Fixed
- * Hotfix on GetInlineText() local function.
+ * Hotfix on `GetInlineText()` local function.
 
 ## [1.0.0]
 Initial version
