@@ -50,6 +50,39 @@ namespace SubtitleParser
         }
 
         /// <summary>
+        /// String format of time on subtitle. E.g "hh\:mm\:ss\,fff"
+        /// </summary>
+        public class SubtitleTimeFormat
+        {
+            /// <summary>
+            /// Index of start time on string.
+            /// </summary>
+            public int StartTimeOffset = 0;
+
+            /// <summary>
+            /// Length of start time on string.
+            /// </summary>
+            public int StartTimeLenght = 12;
+
+            /// <summary>
+            /// Index of end time on string.
+            /// </summary>
+            public int EndTimeOffset = 17;
+
+            /// <summary>
+            /// Length of end time on string.
+            /// </summary>
+            public int EndTimeLenght = 12;
+
+            /// <summary>
+            /// String format of time.
+            /// </summary>
+            public string TimeStringFormat = @"hh\:mm\:ss\,fff";
+        }
+
+        private static readonly SubtitleTimeFormat _defaultSubtitleTimeFormat = new SubtitleTimeFormat();
+
+        /// <summary>
         /// [Unsafe] Returns lines of contents of specified file via its path.
         /// </summary>
         /// <param name="filePath">File path that content will be read.</param>
@@ -66,6 +99,7 @@ namespace SubtitleParser
             }
             catch (Exception ex)
             {
+                // Returning exception.
                 throw ex;
             }
 
@@ -91,9 +125,17 @@ namespace SubtitleParser
         /// [Unsafe] Returns parsed contents. This method trims text contents of given subtitle lines.
         /// </summary>
         /// <param name="subtitleLines">Lines of contents to be parsed</param>
+        /// <param name="subtitleTimeFormat"></param>
         /// <returns>List of SubtitleBlock (List[SubtitleBlock])</returns>
-        public static List<SubtitleBlock> ParseSubtitleList(string[] subtitleLines)
+        public static List<SubtitleBlock> ParseSubtitleList(string[] subtitleLines, SubtitleTimeFormat subtitleTimeFormat = null)
         {
+            //
+            if (subtitleTimeFormat == null) {
+
+                //
+                subtitleTimeFormat = _defaultSubtitleTimeFormat;
+            }
+
             try
             {
                 // List of subtitle blocks to be filled.
@@ -114,10 +156,10 @@ namespace SubtitleParser
                         // 00:00:00,000 --> 00:00:01,000
 
                         // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
-                        StartTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
+                        StartTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(subtitleTimeFormat.StartTimeOffset, subtitleTimeFormat.StartTimeLenght),subtitleTimeFormat.TimeStringFormat, null),
 
                         // Take last 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().
-                        EndTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(17, 12), @"hh\:mm\:ss\,fff", null),
+                        EndTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(subtitleTimeFormat.EndTimeOffset, subtitleTimeFormat.EndTimeLenght), subtitleTimeFormat.TimeStringFormat, null),
 
                         // Calls GetInlineText() to fill inlineTextList. GetInlineText() returns lines of contents on specified SubtitleBlock
                         InlineTextList = GetInlineText(),
@@ -176,7 +218,7 @@ namespace SubtitleParser
             }
             catch (Exception ex)
             {
-                //
+                // Returning exception.
                 throw ex;
             }
         }
@@ -185,9 +227,17 @@ namespace SubtitleParser
         /// [Unsafe] Returns parsed contents. This method trims text contents of given subtitle lines.
         /// </summary>
         /// <param name="subtitleLines">Lines of contents to be parsed</param>
+        /// <param name="subtitleTimeFormat">Default provided.</param>
         /// <returns>List of SubtitleBlock (List[SubtitleBlock])</returns>
-        public static List<SubtitleBlock> ParseSubtitleListUnsafe(string[] subtitleLines)
+        public static List<SubtitleBlock> ParseSubtitleListUnsafe(string[] subtitleLines, SubtitleTimeFormat subtitleTimeFormat = null)
         {
+            //
+            if (subtitleTimeFormat == null)
+            {
+                //
+                subtitleTimeFormat = _defaultSubtitleTimeFormat;
+            }
+
             // List of subtitle blocks to be filled.
             List<SubtitleBlock> subtitleBlockList = new List<SubtitleBlock>();
 
@@ -206,10 +256,10 @@ namespace SubtitleParser
                     // 00:00:00,000 --> 00:00:01,000
 
                     // Take first 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().  
-                    StartTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(0, 12), @"hh\:mm\:ss\,fff", null),
+                    StartTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(subtitleTimeFormat.StartTimeOffset, subtitleTimeFormat.StartTimeLenght), subtitleTimeFormat.TimeStringFormat, null),
 
                     // Take last 12 characters of the line and create TimeSpan via TimeSpan.ParseExact().
-                    EndTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(17, 12), @"hh\:mm\:ss\,fff", null),
+                    EndTime = TimeSpan.ParseExact(subtitleLines[i + 1].Substring(subtitleTimeFormat.EndTimeOffset, subtitleTimeFormat.EndTimeLenght), subtitleTimeFormat.TimeStringFormat, null),
 
                     // Calls GetInlineText() to fill inlineTextList. GetInlineText() returns lines of contents on specified SubtitleBlock
                     InlineTextList = GetInlineText(),

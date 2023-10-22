@@ -10,6 +10,14 @@
 ### Removed
 -->
 
+## [2.2.0]
+
+### Added
+``SubtitleTimeFormat`` is available. It is for declare how time string to be parsed on ``ParseSubtitleList()`` and ``ParseSubtitleListUnsafe()``
+
+### Changed
+* Icon was replaced with solid white background.
+
 ## [2.1.2]
 
 ### Added
