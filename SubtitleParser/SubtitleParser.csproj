@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0; net7.0; net461; netcoreapp3.1; netstandard2.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
-    <AssemblyVersion>2.1.2</AssemblyVersion>
-    <FileVersion>2.1.2</FileVersion>
+    <AssemblyVersion>2.2.0</AssemblyVersion>
+    <FileVersion>2.2.0</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -17,11 +17,13 @@
     <RepositoryUrl>https://github.com/meokullu/SubtitleParser</RepositoryUrl>
     <PackageTags>parser; movies; movie; parsing; subtitles; subtitle; film; films; subtitle-parser</PackageTags>
     <PackageReleaseNotes>
-      v2.1.2 preparing for Nuget refresh.
+      v2.2.0
+      SubtitleTimeFormat is available.
+      Icon was replaced with solid white background.
       See changelog (https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
     </PackageReleaseNotes>
-    <Version>2.1.2</Version>
-    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <Version>2.2.0</Version>
+    <ApplicationIcon>Resources\icon256.ico</ApplicationIcon>
     <PackageIcon>icon.png</PackageIcon>
     <Company>Enes Okullu</Company>
     <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
@@ -38,7 +40,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Resources\icon.ico" />
+    <Content Include="Resources\icon256.ico" />
   </ItemGroup>
 
   <ItemGroup>
