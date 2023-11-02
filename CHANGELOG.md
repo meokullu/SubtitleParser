@@ -1,73 +1,74 @@
 ## SubtitleParser Changelog
+[![SubtitleParser](https://img.shields.io/nuget/v/SubtitleParser.svg)](https://www.nuget.org/packages/SubtitleParser/)
 
 <!--
-## [Unreleased]
+### [Unreleased]
 
-### Added
+#### Added
 
-### Changed
+#### Changed
 
-### Removed
+#### Removed
 -->
 
-## [2.2.0]
+### [2.2.0]
 
-### Added
+#### Added
 ``SubtitleTimeFormat`` is available. It is for declare how time string to be parsed on ``ParseSubtitleList()`` and ``ParseSubtitleListUnsafe()``
 
-### Changed
+#### Changed
 * Icon was replaced with solid white background.
 
-## [2.1.2]
+### [2.1.2]
 
-### Added
+#### Added
 * Wiki link added under Example Usage on README.
 * CHANGELOG link added under Version History on README.
 * Multiple tags added for PackageTags.
 
-### Changed
+#### Changed
 * CHANGELOG has better view.
 * LICENCE.txt renamed as LICENCE.
 
-## [2.1.1]
+### [2.1.1]
 
-### Changed
+#### Changed
 * Icon was replaced with higher resolution.
 
-## [2.1.0]
+### [2.1.0]
 
-### Added
+#### Added
 *  Multi-target frameworks (net6.0; net7.0; net461; netcoreapp3.1; netstandard2.0) support is added.
 
-## [2.0.2]
+### [2.0.2]
 
-### Changed
+#### Changed
 * Fixed naming violations.
 
-## [2.0.1]
+### [2.0.1]
 
-### Changed
+#### Changed
 * Fixed naming violations.
 
-## [2.0.0]
+### [2.0.0]
 
-### Changed
+#### Changed
 * Fixing naming vialations inside of SubtitleBlock. Public members names start with uppercase now.
 
-## [1.2.0]
+### [1.2.0]
 
-### Added
+#### Added
 * Added `TrimmedLineIndexList` publicly available.
 * Added OutputDLL which contains .dll and .xml file.
 
-## [1.1.0]
+### [1.1.0]
 
-### Added
+#### Added
  * Adding xml summaries to SubtitleBlock class and its elements. 
  * Support Unsafe versions of `ParseSubtitleList()` and `GetTextByLines()`.
 
-### Fixed
+#### Fixed
  * Hotfix on `GetInlineText()` local function.
 
-## [1.0.0]
+### [1.0.0]
 Initial version
