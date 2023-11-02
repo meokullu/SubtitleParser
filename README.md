@@ -1,4 +1,5 @@
 ## SubtitleParser
+[![SubtitleParser](https://img.shields.io/nuget/v/SubtitleParser.svg)](https://www.nuget.org/packages/SubtitleParser/) [![SubtitleParser](https://img.shields.io/nuget/dt/SubtitleParser.svg)](https://www.nuget.org/packages/SubtitleParser/) [![License](https://img.shields.io/github/license/meokullu/SubtitleParser.svg)](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE)
 
 SubtitleParser is a project to parse subtitle content data into subtitle blocks.
 
@@ -22,10 +23,13 @@ See [Changelog](https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG
 * Create an issue or check task list: [Issues](https://github.com/meokullu/SubtitleParser/issues)
 
 ### Licence
-[MIT license](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE)
+This repository is licensed under the "MIT" license. See [MIT license](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE).
 
-### Authors
-Twitter: Enes Okullu [@enesokullu](https://twitter.com/EnesOkullu)
+### Authors & Contributing
+
+If you'd like to contribute, then contribute. <!-- [contributing guide](CONTRIBUTING.md). -->
+
+[![Contributors](https://contrib.rocks/image?repo=meokullu/SubtitleParser)](https://github.com/meokullu/SubtitleParser/graphs/contributors)
 
 ### Help
 Twitter: Enes Okullu [@enesokullu](https://twitter.com/EnesOkullu)
