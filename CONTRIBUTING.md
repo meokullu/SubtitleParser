@@ -1,5 +1,5 @@
 ## Contribute
-You can contribute to CalculateETA.
+You can contribute to SubtitleParser.
 
 ## Issues
 You can fill an issue [open issues](https://github.com/meokullu/CalculateETA/issues)
