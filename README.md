@@ -27,7 +27,7 @@ This repository is licensed under the "MIT" license. See [MIT license](https://g
 
 ### Authors & Contributing
 
-If you'd like to contribute, then contribute. <!-- [contributing guide](CONTRIBUTING.md). -->
+If you'd like to contribute, then contribute. [contributing guide](https://github.com/meokullu/SubtitleParser/blob/master/CONTRIBUTING.md).
 
 [![Contributors](https://contrib.rocks/image?repo=meokullu/SubtitleParser)](https://github.com/meokullu/SubtitleParser/graphs/contributors)
 
