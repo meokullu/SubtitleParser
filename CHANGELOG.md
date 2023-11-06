@@ -11,6 +11,12 @@
 #### Removed
 -->
 
+### [2.2.1]
+
+#### Changed
+* New design README.
+* New design CHANGELOG.
+
 ### [2.2.0]
 
 #### Added
