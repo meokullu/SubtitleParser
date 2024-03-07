@@ -3,7 +3,7 @@
 
 SubtitleParser is a project to parse subtitle content data into subtitle blocks.
 
-![SubtitleParser](https://github.com/meokullu/SubtitleParser/assets/4971757/13c4b40a-2069-4113-abee-32668fd6937f)
+![SubtitleParser](https://github.com/meokullu/SubtitleParser/assets/4971757/a5316c0c-3e42-4574-a7ec-c104760b6ec2)
 
 [Check out on NuGet gallery](https://www.nuget.org/packages/SubtitleParser/)
 
