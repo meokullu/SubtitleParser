@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0; net7.0; net461; netcoreapp3.1; netstandard2.0</TargetFrameworks>
     <ImplicitUsings>disable</ImplicitUsings>
-    <AssemblyVersion>2.2.1</AssemblyVersion>
-    <FileVersion>2.2.1</FileVersion>
+    <AssemblyVersion>2.2.2</AssemblyVersion>
+    <FileVersion>2.2.2</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Title>Subtitle Parser</Title>
@@ -17,12 +17,11 @@
     <RepositoryUrl>https://github.com/meokullu/SubtitleParser</RepositoryUrl>
     <PackageTags>parser; movies; movie; parsing; subtitles; subtitle; film; films; subtitle-parser</PackageTags>
     <PackageReleaseNotes>
-      v2.2.1
-      * New design README.
-      * New design CHANGELOG.
+      v2.2.2
+      SubtitleFiles.cs are spilitted into different files based on their purpose.
       See changelog (https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
     </PackageReleaseNotes>
-    <Version>2.2.1</Version>
+    <Version>2.2.2</Version>
     <ApplicationIcon>Resources\icon256.ico</ApplicationIcon>
     <PackageIcon>icon.png</PackageIcon>
     <Company>Enes Okullu</Company>
