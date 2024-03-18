@@ -9,6 +9,8 @@ namespace SubtitleParser
 {
     public partial class SubtitleParser
     {
+        private static readonly Encoding s_defaultEncoding = Encoding.UTF8;
+
         /// <summary>
         /// Returns lines of contents of specified file via its path.
         /// </summary>
@@ -16,22 +18,44 @@ namespace SubtitleParser
         /// <returns>Lines of contents (string[])</returns>
         public static string[] GetTextByLines(string filePath)
         {
-            // String array variable that will be filled with content.
-            string[] movieSubtitleTextByLines;
-
+            //
             try
             {
-                // Getting lines of file.
-                movieSubtitleTextByLines = File.ReadAllLines(path: filePath);
+                // Returning string array variable that will be filled with content.
+                return File.ReadAllLines(path: filePath);
             }
             catch (Exception ex)
             {
                 // Returning exception.
                 throw ex;
             }
+        }
 
-            // Returning lines
-            return movieSubtitleTextByLines;
+        /// <summary>
+        /// Returns lines of contents of specified file via its path.
+        /// </summary>
+        /// <param name="filePath">File path that content will be read.</param>
+        /// <param name="encoding">Encoding to read text.</param>
+        /// <returns>Lines of contents (string[])</returns>
+        public static string[] GetTextByLines(string filePath, Encoding encoding)
+        {
+            // Checking if encoding is provided, if not it sets default encoding.
+            if (encoding == null)
+            {
+                encoding = s_defaultEncoding;
+            }
+
+            //
+            try
+            {
+                // Returning string array variable that will be filled with content.
+                return File.ReadAllLines(path: filePath, encoding: encoding);
+            }
+            catch (Exception ex)
+            {
+                // Returning exception.
+                throw ex;
+            }
         }
 
         /// <summary>
@@ -41,11 +65,26 @@ namespace SubtitleParser
         /// <returns>Lines of contents (string[])</returns>
         public static string[] GetTextByLinesUnsafe(string filePath)
         {
-            // Getting lines of file.
-            string[] movieSubtitleTextByLines = File.ReadAllLines(path: filePath);
+            // Returning string array variable that will be filled with content.
+            return File.ReadAllLines(path: filePath);
+        }
 
-            // Returning lines
-            return movieSubtitleTextByLines;
+        /// <summary>
+        /// [Unsafe] Returns lines of contents of specified file via its path.
+        /// </summary>
+        /// <param name="filePath">File path that content will be read.</param>
+        /// <param name="encoding">Encoding to read text.</param>
+        /// <returns>Lines of contents (string[])</returns>
+        public static string[] GetTextByLinesUnsafe(string filePath, Encoding encoding)
+        {
+            // Checking if encoding is provided, if not it sets default encoding.
+            if (encoding == null)
+            {
+                encoding = s_defaultEncoding;
+            }
+
+            // Returning string array variable that will be filled with content.
+            return File.ReadAllLines(path: filePath, encoding: encoding);
         }
     }
 }

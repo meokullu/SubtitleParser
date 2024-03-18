@@ -11,6 +11,11 @@
 #### Removed
 -->
 
+### [2.3.0]
+#### Added
+* `GetTextByLines(string filePath, Encoding encoding)` is added.
+* `GetTextByLinesUnsafe(string filtePath, Encoding encoding)` is added.
+
 ### [2.2.2]
 #### Added
 * `GetText.cs`, `Parse.cs`, `SubtitleBlock.cs`, `SubtitleTimeFormat.cs` and `Trim.cs` are created. `SubtitleParser.cs` is splitted into them based on purpose.
