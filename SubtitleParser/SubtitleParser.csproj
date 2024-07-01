@@ -20,7 +20,7 @@
       v2.3.0
       * GetTextByLines(string filePath, Encoding encoding) is added.
       * GetTextByLinesUnsafe(string filtePath, Encoding encoding) is added.
-
+      * Override method of SubtitleBlock is added.
       See changelog (https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
     </PackageReleaseNotes>
     <Version>2.3.0</Version>

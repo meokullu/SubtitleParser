@@ -15,6 +15,7 @@
 #### Added
 * `GetTextByLines(string filePath, Encoding encoding)` is added.
 * `GetTextByLinesUnsafe(string filtePath, Encoding encoding)` is added.
+* Override ToString() method of `SubtitleBlock` is added.
 
 ### [2.2.2]
 #### Added

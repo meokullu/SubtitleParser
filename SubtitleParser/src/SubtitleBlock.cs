@@ -40,6 +40,15 @@ namespace SubtitleParser
             /// Lines of text contents.
             /// </summary>
             public List<string> InlineTextList;
+
+            /// <summary>
+            /// Override method of ToString(). Returns as "OrderNumber StartTime EndTime and string of InlineTextList".
+            /// </summary>
+            /// <returns>String formatted SubtitleBlock.</returns>
+            public override string ToString()
+            {
+                return $"{OrderNumber} {StartTime} {EndTime} {string.Join(" ", InlineTextList)}";
+            }
         }
     }
 }
