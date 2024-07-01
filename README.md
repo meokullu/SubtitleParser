@@ -8,15 +8,12 @@ SubtitleParser is a project to parse subtitle content data into subtitle blocks.
 [Check out on NuGet gallery](https://www.nuget.org/packages/SubtitleParser/)
 
 ### Description
-
 SubtitleParser has methods get content lines from specified file path and parse them into subtitle blocks.
 
 ### Example usage
-
-To check listed methods, ~~example of output~~ visit wiki page. [SubtitleParser Wiki](https://github.com/meokullu/SubtitleParser/wiki/Listed-Methods)
+To check listed methods and example of output visit wiki page. [SubtitleParser Wiki](https://github.com/meokullu/SubtitleParser/wiki/Listed-Methods)
 
 ### Version History
-
 See [Changelog](https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG.md)
 
 ### Task List
@@ -26,9 +23,7 @@ See [Changelog](https://github.com/meokullu/SubtitleParser/blob/master/CHANGELOG
 This repository is licensed under the "MIT" license. See [MIT license](https://github.com/meokullu/SubtitleParser/blob/master/LICENSE).
 
 ### Authors & Contributing
-
 If you'd like to contribute, then contribute. [contributing guide](https://github.com/meokullu/SubtitleParser/blob/master/CONTRIBUTING.md).
-
 [![Contributors](https://contrib.rocks/image?repo=meokullu/SubtitleParser)](https://github.com/meokullu/SubtitleParser/graphs/contributors)
 
 ### Help
