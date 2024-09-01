@@ -10,6 +10,16 @@ SubtitleParser is a project to parse subtitle content data into subtitle blocks.
 ### Description
 SubtitleParser has methods get content lines from specified file path and parse them into subtitle blocks.
 
+### How to download
+Release: [Latest release](https://github.com/meokullu/SubtitleParser/releases/latest)
+
+[Download on NuGet gallery](https://www.nuget.org/packages/SubtitleParser/)
+
+.NET CLI:
+```
+dotnet add package SubtitleParser
+```
+
 ### Example usage
 To check listed methods and example of output visit wiki page. [SubtitleParser Wiki](https://github.com/meokullu/SubtitleParser/wiki/Listed-Methods)
 
